@@ -9,14 +9,14 @@
 <body>
 	<!-- the entire body must be written by student -->
 <form>
-	<fieldset>
+	<fieldset disabled>
 		<!-- <legend>Disabled fieldset example</legend> -->
 		<div class="mb-3">
 			<label for="disabledTextInput" class="form-label">First Name</label>
 			<input type="text" id="first-name-input" class="form-control" placeholder="First Name">
 		</div>
 <div class="mb-3">
-	<label for="text" class="form-label">Last Name</label>
+	<label for="disabledTextInput" class="form-label">Last Name</label>
 	<input type="text" id="last-name-input" class="form-control" placeholder="Last Name">
 </div>
 
@@ -31,25 +31,30 @@
 </div>
 
 <div class="mb-3">
-	<label for="TextInput" class="form-label">Roll Number</label>
-	<input type="text" id="roll-no-input" class="form-control" placeholder="Roll Number">
+	<label for="disabledTextInput" class="form-label">First Name</label>
+	<input type="text" id="first-name-input" class="form-control" placeholder="First Name">
 </div>
 
-		<div class="input-group mb-3">
-			<select class="form-select" id="inputGroupSelect02">
-				<option selected>Choose...</option>
-				<option value="2020">2020</option>
-				<option value="2021">2021</option>
-				<option value="2022">2022</option>
-				<option value="2023">2023</option>
+		<div class="mb-3">
+			<label for="disabledSelect" class="form-label">Disabled select menu</label>
+			<select id="disabledSelect" class="form-select">
+				<option>Disabled select</option>
 			</select>
-			<label class="input-group-text" for="inputGroupSelect02">Graduation year</label>
+		</div>
+		<div class="mb-3">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+				<label class="form-check-label" for="disabledFieldsetCheck">
+					Can't check this
+				</label>
+			</div>
 		</div>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</fieldset>
 </form>
     <script type="text/javascript" src="./script.js">
 </script>
+
 </body>
 
 </html>
